@@ -61,18 +61,24 @@ body{
 .sidebar #btn{
     position: absolute;
     color: #fff;
-    left: 50%;
+    left: 15%;
     top: 6px;
     font-size: 20px;
     height: 50px;
     width: 50px;
     text-align: center;
     line-height: 50px;
-    transform: translateX(-50%);
+   
+    
+    
+}
+.sidebar #btn:active{
+transition: transform .2s;
+    margin: 0 auto;
 }
 .sidebar #btn:hover{
     cursor: pointer;
-    transform: scale(0.7)
+    transform: scale(1.3);
 }
 
 .sidebar.active #btn{
