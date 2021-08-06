@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Escape Media</title>
+</head>
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="circle-cropped.png" alt="name_job">
+                <div class="logo_name">Home</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="new_list">
+            <li>
+               
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+              
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">About US</span>
+                </a>
+                <span class="tooltip">About US</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-task'></i>
+                    <span class="links_name">Services</span>
+                </a>
+                <span class="tooltip">Services</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>   
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!-- <img src="" alt=""> -->
+                    <div class="name_job">
+                        <div class="name">Akshat Modani</div>
+                        <div class="job">CSE Student</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log-out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchbtn = document.querySelector(".bx bx-search");
+
+        btn.onclick = function(){
+                sidebar.classList.toggle("active");
+        }
+
+        searchbtn.onclick = function(){
+                sidebar.classList.toggle("active");
+        }
+    </script>
+
+</html>
